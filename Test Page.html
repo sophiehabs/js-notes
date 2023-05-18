@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- is an instruction to the web browser about the version of HTML used in the document. 
+    It tells the browser that the document is written in HTML5, the latest version of HTML. -->
+<html>
+<!-- tag is the container for all other HTML elements on the webpage 
+    and it tells the browser that the following content is written in HTML. -->
+    <head>
+<!-- tag contains information about the document, such as the title of the webpage, meta data and links 
+    to external resources like CSS and JavaScript files. -->
+        <meta charset="utf-8" />
+<!-- tag specifies the character encoding used in the document. 
+    The value "utf-8" stands for Unicode Transformation Format- 8-bits 
+    and is a widely used character encoding for the web. 
+    It allows the browser to correctly display characters from a variety of languages and special characters. -->
+        <title>Test Page</title>
+<!-- This tag specifies the title of the webpage, which is displayed in the browser's title bar or tab. -->
+        <style>
+/* This tag is used to define CSS styles for the elements on the webpage. */
+            #greetingtitle {
+                color: darkgreen;
+            }
+/* This CSS rule sets the text color of the element with the id "greetingtitle" to dark green. */
+            .redhighlight {
+                background-color: red;
+            }
+/* This CSS rule sets the background color of elements with the class "redhighlight" to red. */
+            .visibleornot {
+                visibility: hidden;
+            }
+/* This CSS rule sets the visibility of elements with the class "visibleornot" to hidden, making them invisible on the webpage. */
+            header h1 {
+                margin: 50px;
+            }
+/* This CSS rule sets a margin of 50 pixels around all h1 elements that are inside a header element. */
+        </style>
+    <head>
+    <body>
+        <header><h1>Header</h1></header>
+        <nav>
+            <p>This is the navigation panel.</p>
+        <p class="visibleornot">Second paragraph</p>
+        </nav>
+        <main>
+            <h1 id="greetingtitle">Hello USER</h1>
+            <p>This is the <mark>content</mark></p>
+        </main>
+        <footer><p class="redhighlight">This is the footer</p></footer>
+    </body>
+</html>
+
+

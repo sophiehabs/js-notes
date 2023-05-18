@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Timer example</title>
+    <script>
+      function timerHandler() {
+        document.getElementById("alarm").textContent = "Time has passed";
+      }
+      function myTimer() {
+        setTimeout(timerHandler, 3000);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="myTimer();">Set timer</button>
+    <p id="alarm"></p>
+  </body>
+</html>

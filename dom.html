@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .greenveggies {
+            color: green;
+            /* font-weight: bold; */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="salutation">Hello, USER</h1> -->
+    <!-- <p>Test</p> -->
+    <p>Vegetables:</p>
+    <ul id="veggielist">
+        <li class="greenveggies">Lettuce</li>
+        <li id="tomato">Tomato</li>
+        <li>Carrot</li>
+        <li class="greenveggies">Spinach</li>
+    </ul>
+    <script>
+        //const name = 'Carlos'; 
+        let gv = document.getElementsByClassName('greenveggies');
+        for (v of gv) {
+            v.style.fontWeight = 'bold';
+        //console.log(v.textContent)
+        //v.textContent += "(GV)";
+        }
+        // node.textContent = "Hello, " + name;
+    </script>
+</body>
+</html>
+
+<!-- document.getElementById('tomato').style.color = 'red';
+"red"  -->
+<!-- let vl = document.getElementById('veggielist');
+let newitem = document.createElement('li') 
+newitem.textContent = Garlic 
+vl.appendChild(newitem);
+-->
